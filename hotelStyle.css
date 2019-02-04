@@ -1,0 +1,245 @@
+/**
+Stylesheet for Velvet & Compass Hotel booking site, for COSC212
+Author: Megan Hayes
+ */
+
+body {
+    background-color: gainsboro;
+    color: black;
+    width: 1200px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 14pt;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    background-color: inherit;
+    color: ivory;
+    padding: 25px;
+    margin: 0;
+    background-image: url("images/adventure-ancient-antique-697662.jpg");
+    font-family: "Lucida Blackletter", "Copperplate Gothic Light", serif;
+}
+
+header p {
+    font-style: italic;
+}
+
+#user {
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+/**
+Styling for the booking forms
+ */
+
+form fieldset ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+
+form fieldset {
+    border-style: none;
+}
+
+.textInputs label {
+    float: left;
+    /*width: 125px;*/
+    text-align: right;
+}
+
+/**.contact {
+    clear: both;
+    margin-top: 20px;
+}*/
+
+.textInputs input {
+    float: right;
+    width: 200px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    /*padding: 7px 4px;*/
+    /*font-size: 100%;*/
+}
+
+.textInputs h2 {
+    float: left;
+}
+
+.textInputs input + p, .textInputs h2 + p {
+    clear: both;
+}
+
+/**
+Styling for navigation bar.
+ */
+nav ul {
+    width: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    text-align: center;
+    width: 23%;
+    border: none;
+    background-color: #0078A8;
+    color: ivory;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li:first-of-type {
+    padding-left: 18px;
+}
+
+nav ul li:last-of-type {
+    padding-right: 18px;
+}
+
+#adminNav {
+    padding-left: 462px;
+    padding-right: 462px;
+}
+
+nav + p, nav + div {
+    clear: both;
+}
+
+section.about {
+    float: left;
+    width: 45%;
+    padding-left: 40px;
+}
+
+section.about + footer {
+    clear: both;
+}
+
+.room {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div#carousel {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#carousel img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#carousel figcaption {
+    text-align: center;
+}
+
+/**
+Styling for table structures within the site.
+ */
+table {
+    align-content: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.currentBookings {
+    width: 100%;
+    padding: 10px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+/**
+Styling for location.html
+Styling for map display and restaurant and attraction text blocks.
+ */
+
+#map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 590px;
+    height:400px;
+    padding: 0;
+}
+
+.contact {
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.contact + h2 {
+    clear: both;
+}
+
+#restaurant-block, #attraction-block {
+    /*background-color: #ffffff;
+    color: inherit;*/
+    width: 100%;
+    /*border: ivory groove 5px;*/
+    padding: 10px;
+    float: left;
+    margin-bottom: 20px;
+}
+.restaurant, .attraction {
+    float: left;
+    width: 32%;
+}
+
+
+#attraction-block + footer, .currentBookings + footer {
+    clear: both;
+}
+
+#phpBookings {
+    float: left;
+    /*padding-left: 50px;*/
+    /*padding-right: 100px;*/
+    width: 32%;
+}
+
+#availableRooms {
+    float: left;
+    /*padding-left: 50px;*/
+    width: 32%;
+}
+
+#newRoom {
+    float: left;
+    width: 32%;
+}
+
+#phpBookings + footer, #availableRooms + footer, #newRoom + footer {
+    clear: both;
+}
+
+/**
+Styling for footer
+ */
+footer p {
+    font-size: small;
+    padding-top: 20px;
+}
+
+footer a {
+    font-size: medium;
+}
